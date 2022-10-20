@@ -14,7 +14,6 @@ if __name__ == "__main__":
     todos_url = "https://jsonplaceholder.typicode.com/todos"
     users_url = "https://jsonplaceholder.typicode.com/users/{}".format(user_id)
 
-
     file_content = []
 
     todo_data = requests.get(todos_url).json()
@@ -24,9 +23,7 @@ if __name__ == "__main__":
     for todo in todo_data:
         if user_id == todo["userId"]:
             file_content.append(
-                [str(user_id),
-                 employee_name, 
-                 todo["completed"],
+                [str(user_id), employee_name, todo["completed"],
                  todo["title"]])
 
     print(file_content)
@@ -37,5 +34,3 @@ if __name__ == "__main__":
             for item in row:
                 str(item)
             write.writerow(row)
-
-
