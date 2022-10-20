@@ -32,7 +32,7 @@ if __name__ == "__main__":
                 titles.append(todo["title"])
 
     print("Employee {} is done with tasks({}/{})"
-        .format(employee_name, completed_todos, total_user_todos, titles))
+          .format(employee_name, completed_todos, total_user_todos))
 
     for title in titles:
         print("\t {}".format(title))
