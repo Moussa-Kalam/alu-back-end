@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# Python script that returns information about an employee's TODO list progress
 
-"""import libraries"""
+"""Python script that returns information about an employee's TODO list progress"""
 
 import requests
 import sys
