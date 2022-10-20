@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     todo_data = requests.get(todos_url).json()
 
-    employee_name = requests.get(users_url).json()["name"]
+    employee_name = requests.get(users_url).json()["username"]
 
     for todo in todo_data:
         if user_id == todo["userId"]:
