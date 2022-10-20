@@ -25,9 +25,9 @@ if __name__ == "__main__":
         if user_id == todo["userId"]:
             file_content.append(
                 [str(user_id),
-                employee_name, 
-                todo["completed"],
-                todo["title"]])
+                 employee_name, 
+                 todo["completed"],
+                 todo["title"]])
 
     print(file_content)
     file_name = "{}.csv".format(user_id)
