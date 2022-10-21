@@ -30,7 +30,7 @@ if __name__ == "__main__":
                     "username": employee_username
                 }
             )
-    
+
     print(result)
     file = "{}.json".format(user_id)
     with open(file, 'w') as files:
