@@ -2,7 +2,6 @@
 
 """Import libraries"""
 
-from cmath import inf
 import json
 import requests
 import sys
